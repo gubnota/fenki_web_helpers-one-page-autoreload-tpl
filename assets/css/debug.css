@@ -1,0 +1,32 @@
+#debugger{
+border: #031 2px solid;
+background-color: #eee;
+position: fixed;
+width: 100%;
+height: 100%;
+left: 0;
+top: 0;
+min-height: 100%;
+overflow: hidden;
+color: #333;
+box-sizing: border-box;
+z-index: 103;
+}
+.debugger_close{
+position: fixed;
+    font-size: 4rem;
+    cursor: pointer;
+right: 0; bottom: 0;
+background: #083; color: #fff;
+line-height: 2.2rem;
+z-index: 102;
+}
+#debugger .contents{
+    overflow: scroll;
+  height: 99%;
+  padding-bottom: 100px;
+    -webkit-overflow-scrolling: touch;
+}
+#debugger .debugger_close{
+    right: 0; bottom: 0;
+}

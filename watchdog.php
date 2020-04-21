@@ -1,6 +1,6 @@
 #!/usr/bin/php
 <?php
-$minify = true;
+$minify = true; $debug=true;
 $time = gmdate('ymdHis');
 exec('rm -rf "'.__DIR__.'/web/assets/js/" && mkdir "'.__DIR__.'/web/assets/js/"');
 exec('rm -rf "'.__DIR__.'/web/assets/css/" && mkdir "'.__DIR__.'/web/assets/css/"');
@@ -20,10 +20,13 @@ function catFiles($arrayOfFiles, $outputPath) {
 
 $js = [
 'assets/js/app.main.js',
+'assets/js/app.tap.js',
+'assets/js/app.typeface.js',
 'assets/js/app.debug.js',
 'assets/js/watch.js',
 ];
 $css = [
+'assets/css/debug.css',
 'assets/css/style.css',
 ];
 catFiles($js, __DIR__.'/web/assets/js/app.'.$time.'.js');

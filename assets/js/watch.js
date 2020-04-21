@@ -15,7 +15,7 @@ setInterval(function() {
   if (!app.$.pending_app_ver) {
     app.$.pending_app_ver = true;
     var time = app.gmtime();
-    fetch('/assets/ver.json?'+time).then(function (response) {
+    fetch('./assets/ver.json?'+time).then(function (response) {
     	return response.json();
     }).then(function(blob) {
       app.$.pending_app_ver = false;
