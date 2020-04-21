@@ -16,8 +16,8 @@
 	<link rel="apple-touch-icon-precomposed" sizes="76x76" href="./assets/img/apple-touch-icon-76x76-precomposed.png">
 	<link rel="icon" href="./assets/img/apple-touch-icon.png">
 	<title>Hello, guest!</title>
-<link rel="stylesheet" type="text/css" href="./assets/css/style.200421163146.css">
-<script type="text/javascript" src="./assets/js/app.200421163146.js"></script>
+<link rel="stylesheet" type="text/css" href="./assets/css/style.200421191259.css">
+<script type="text/javascript" src="./assets/js/app.200421191259.js"></script>
 </head>
 <body>
 <div id="content" style="padding: 1em">
@@ -26,7 +26,39 @@
 	<code>./RUNME.sh</code>
 <p>The page and all related css/js will be rebuilt and everything will be automatically reloaded after each change in one of the files in ‘<span style="background: #fd0">assets</span>’ folder. By default, it uses npm's http-server which runs at <i>8080</i> port (the browser window should pop-up as you run it). You can use any other server, just remember to point the web root to its web sub-directory.
 by using app.log feature you can activate a little debug console. It both works fine to debug on a mobile device, just open the same web address as written</p>
-
+<h2>Grid</h2>
+<p><a href="https://grid.layoutit.com/" target="_blank">https://grid.layoutit.com/</a></p>
+<div class="grid-wrapper">
+	<div>Lorem ipsum dolor sit</div>
+	<div>Lorem ipsum dolor sit</div>
+	<div class="nested">
+		<div>Lorem ipsum</div> <div>dolor sit</div>
+		<div>Lorem ipsum</div> <div>dolor sit</div>
+		<div>Lorem ipsum</div> <div>dolor sit</div>
+		<div>Lorem ipsum</div> <div>dolor sit</div>
+	</div>
+	<div>Lorem ipsum dolor sit</div>
+	<div>Lorem ipsum dolor sit</div>
+	<div>Lorem ipsum dolor sit</div>
+	<div>Lorem ipsum dolor sit</div>
+	<div>Lorem ipsum dolor sit</div>
+</div>
+<br>
+<div class="grid-container">
+  <div class="a">a</div>
+  <div class="b">b</div>
+  <div class="c">c</div>
+  <div class="d">d</div>
+  <div class="e">e</div>
+  <div class="f">f</div>
+</div>
+<br>
+<div class="grid">
+<div class="box1">box1</div>
+<div class="box2">box2</div>
+<div class="box3">box3</div>
+<div class="box4">box4</div>
+</div>
 <h2>Flexbox</h2>
 <p>Here are flex elements with uneven weights. <span style="background: #fd0">css {flex-direction: column-reverse}</span></p>
 <ul class="column-reverse">
@@ -135,7 +167,7 @@ by using app.log feature you can activate a little debug console. It both works 
 </ul>
 
 <script type="text/javascript">
-window.app_ver=200421163146;
+window.app_ver=200421191259;
 if (location.search.indexOf('nodebug') !== -1) {window.debug=false;}
 else if (location.search.indexOf('debug') !== -1 || location.port == '8080') {window.debug=true;}
 else {window.debug=false;}
